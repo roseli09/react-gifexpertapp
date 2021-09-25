@@ -1,0 +1,69 @@
+:root{
+    --gradient:  radial-gradient(circle, rgba(15,192,203,0.6674019949776786) 0%, rgba(25,18,75,0.8802871490393032) 35%, rgba(184,65,194,0.9054972330729166) 100%);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: monospace;
+    font-size: 20px; 
+    color: white;
+}
+
+body{
+    margin: 1rem 1rem 1rem 1rem;
+    background: var(--gradient);
+    min-block-size: 100vh;
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+}
+
+input{
+    color: gray;
+    font-size: 1.2rem;
+    width: 30%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+}
+
+.card-grid{
+    display: flex;
+    flex-direction: row;  
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content:center;
+}
+
+.card{
+    border-radius: 1rem;
+    margin: 1rem 1rem;
+    width: 300px;
+    height: 240px;
+    background: rgba(255,255,255,0.1);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s;
+}
+
+.card:hover{
+    transform: translateY(80px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8);
+}
+
+.card p{
+    padding: 5px;
+    text-align: center;
+}
+
+.card img{
+    display: block;
+    margin: auto;
+    max-height: 150px;
+}
